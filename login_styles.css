@@ -1,0 +1,106 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #d1e1f0;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.image-side {
+  background-image: url('https://images.pexels.com/photos/19054460/pexels-photo-19054460.jpeg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.login-form {
+  max-width: 400px;
+  width: 100%;
+  background-color: transparent;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: none;
+  color: #222;
+}
+
+.login-subtitle {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* ألوان موحدة باللون الأزرق الغامق */
+.btn-outline-primary {
+  color: #0b2545;
+  border-color: #0b2545;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0b2545;
+  color: white;
+  border-color: #0b2545;
+}
+
+.btn-check:checked + .btn-outline-primary {
+  background-color: #0b2545;
+  color: white;
+  border-color: #0b2545;
+}
+
+.btn-primary {
+  background-color: #0b2545;
+  border-color: #0b2545;
+  transition: background-color 0.3s, border-color 0.3s;
+  color: white;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #091d38;
+  border-color: #091d38;
+  box-shadow: none;
+  color: white;
+}
+
+.fake-recaptcha {
+  max-width: 100%;
+  max-width: 304px;
+  background-color: #f9f9f9;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  user-select: none;
+  margin-bottom: 1.5rem;
+}
+
+.fake-recaptcha img {
+  height: 28px;
+  display: block;
+}
+
+.fake-recaptcha .form-check-input {
+  margin-top: 0;
+}
+
+/* ترتيب الراديوهات الثلاثة فوق اسم المستخدم */
+.bottom-radios {
+  margin-bottom: 1.5rem;
+  gap: 1.5rem;
+  justify-content: center;
+  display: flex;
+}
+
+/* تباعد الحقول */
+.mb-3 {
+  margin-bottom: 1.25rem !important;
+}

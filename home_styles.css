@@ -1,0 +1,210 @@
+ body {
+     background-color: #daecfe;
+     margin: 0;
+     padding: 0;
+     direction: rtl;
+     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ /* Navbar fixed at top */
+ .navbar {
+     background-color: #daecfe;
+     padding: 0.5rem 1rem;
+     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+     position: fixed;
+     top: 0;
+     right: 0;
+     left: 0;
+     z-index: 1040;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .navbar-brand img {
+     width: 40px;
+     height: 40px;
+ }
+
+ .form-control {
+     width: 180px;
+     font-size: 0.9rem;
+     padding: 0.25rem 0.5rem;
+     height: 34px;
+ }
+
+ .btn-bell {
+     background: none;
+     border: none;
+     position: relative;
+     font-size: 1.3rem;
+     color: #333;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 36px;
+     height: 36px;
+     border-radius: 6px;
+ }
+
+ .btn-bell:hover {
+     background-color: #d0d7de;
+ }
+
+ .btn-bell .badge {
+     font-size: 0.65rem;
+     position: absolute;
+     top: 4px;
+     start: 18px;
+     transform: translate(50%, -50%);
+     padding: 2px 5px;
+     font-weight: 600;
+ }
+
+ .user-info {
+     display: flex;
+     align-items: center;
+     gap: 0.4rem;
+     font-weight: 600;
+     color: #333;
+     cursor: pointer;
+ }
+
+ .user-info i {
+     font-size: 1.6rem;
+ }
+
+ /* Layout container: sidebar + main */
+ .layout {
+     display: flex;
+     margin-top: 56px;
+     /* height of navbar */
+     min-height: calc(100vh - 56px);
+ }
+
+ /* Sidebar styles */
+ aside.sidebar {
+     position: fixed;
+     top: 56px;
+     /* height of the navbar */
+     right: 0;
+     width: 200px;
+     height: calc(100vh - 56px);
+     /* fill full height under navbar */
+     background-color: #002b5b;
+     border-left: 1px solid #001d3d;
+     padding: 1rem 0;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     z-index: 1030;
+ }
+
+
+ .sidebar-btn {
+     background: none;
+     border: none;
+     display: flex;
+     align-items: center;
+     gap: 0.7rem;
+     padding: 10px 15px;
+     color: #ffffffcc;
+     font-weight: 600;
+     font-size: 1rem;
+     border-radius: 6px 0 0 6px;
+     transition: background-color 0.2s ease;
+     cursor: pointer;
+     text-align: right;
+ }
+
+ .sidebar-btn:hover,
+ .sidebar-btn.active {
+     background-color: #39537f;
+     color: #fff;
+ }
+
+ .sidebar-btn i {
+     font-size: 1.3rem;
+ }
+
+ main {
+     margin-right: 180px;
+     /* equal to sidebar width */
+     padding: 1rem 2rem;
+     background-color: #d7e5f8;
+     min-height: 100vh;
+     color: rgb(47, 39, 94);
+ }
+
+
+ .custom-card {
+     border-radius: 15px;
+     background-color: white;
+     border: 1px solid white;
+     color: black;
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+ }
+
+ .custom-card .card-icon {
+     width: 50px;
+     height: 50px;
+     object-fit: contain;
+     margin: 1rem 1rem 0 0;
+     display: block;
+ }
+
+ .custom-card .card-title,
+ .custom-card .card-text {
+     color: black;
+ }
+
+ .custom-card .btn-dark {
+     background-color: #000;
+     border-color: #000;
+ }
+
+ .custom-card .btn-dark:hover {
+     background-color: #222;
+     border-color: #222;
+ }
+
+ @media (max-width: 768px) {
+     aside.sidebar {
+         display: none;
+     }
+
+     .form-control {
+         width: 130px;
+     }
+ }
+
+ .btn-toolbar {
+     justify-content: flex-start !important;
+ }
+
+ .sidebar-menu .dropdown-toggle {
+     background-color: transparent;
+     color: #ffffffcc;
+     font-weight: 600;
+     border: none;
+     padding: 10px 15px;
+     border-radius: 6px 0 0 6px;
+ }
+
+ .sidebar-menu .dropdown-toggle:hover,
+ .sidebar-menu .dropdown-toggle:focus {
+     background-color: #39537f;
+     color: #fff;
+ }
+
+ .sidebar-menu .dropdown-menu {
+     background-color: #ffffff;
+     font-size: 0.95rem;
+     padding: 0;
+     margin-bottom: 10px;
+ }
+
+ .sidebar-menu .dropdown-item {
+     padding: 10px 15px;
+     white-space: normal;
+ }
