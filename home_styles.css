@@ -173,9 +173,19 @@
          display: none;
      }
 
+     main {
+    margin-right: 0;
+    padding: 1rem; 
+  }
+
      .form-control {
-         width: 130px;
-     }
+    width: 100px;
+    font-size: 0.8rem;
+  }
+
+  .col-md-4 {
+    width: 100%;
+  }
  }
 
  .btn-toolbar {
